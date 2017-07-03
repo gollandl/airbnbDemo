@@ -4,6 +4,7 @@ import {
 } from 'react-native';
 
 import Navigator from 'native-navigation';
+import theme from '../util/theme';
 
 const propTypes = {
   title: PropTypes.string,
@@ -28,7 +29,7 @@ export default class Screen extends React.Component {
     return (
       <Navigator.Config
         title={title}
-        backgroundColor="#f7f7f7"
+        backgroundColor={theme.color.lightGray}
         elevation={4}
         onBackPress={() => console.log('onBackPress')}
         onLeftPress={() => console.log('onLeftPress')}
